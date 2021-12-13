@@ -9,7 +9,7 @@
 body {
   background: linear-gradient(
       to left,
-      hsla(257, 40%, 49%, 0.87),
+      hsla(257, 40%, 49%, 0.925),
       hsla(300, 69%, 71%, 0.863)
     ),
     url('./img/bg-desktop.svg');
@@ -76,7 +76,7 @@ h3 {
 .paragraph {
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .btn:link,
@@ -121,4 +121,11 @@ h3 {
   background-color: hsl(257, 40%, 49%);
   color: #fff;
   transform: translateY(-2px);
+}
+
+@media (min-width: 375px) {
+  .showcase {
+    display: flex;
+    flex-direction: column;
+  }
 }
